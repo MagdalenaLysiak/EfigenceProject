@@ -1,0 +1,139 @@
+@import  "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic";
+
+header{
+    background-color: $site-colors-header;
+    height: 7em;
+    font-family: 'Roboto Condensed';
+    
+}
+.logo{
+    margin-top: 1em;
+    margin-right: 0.2em;
+    float:left;
+    display:inline;
+    height: 5em;
+    width: 5em;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 2px;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+}
+.av{
+    margin-top: 1em;
+    margin-right: 1.5em;
+    float:left;
+    display:inline;
+    height: 5em;
+    width: 5em;
+    border-radius: 2px;
+    background-image: url(../images/av.jpg);
+    background-size: cover;
+}
+
+.userPreferences {
+    margin-top: 1em;
+    float: left;
+    font-weight: 300;
+    font-size: 21px;
+    color: white;
+    border-left: 2em;
+}
+
+.userPreferences img{
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+    height: auto;
+    width: 18%;
+}
+.wheel:hover{
+    transform: rotate(180deg);
+    transition: 0.6s;
+	transform-style: flat;
+	position: relative;
+}
+
+.message{
+    background-color: #e81c7b;
+    border-radius: 100%;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    left: 18.3em;
+    top: 3.2em;
+}
+.message p{
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    font-size: 0.5em;
+    line-height: 1.8em;
+}
+.menu{
+    
+    display:inline-block;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+   
+}
+li {
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+
+li:hover {
+    background:#000;
+  
+}
+.menu img {
+    height: auto;
+    width: 60%;
+    
+}
+.menu p{
+    margin-top: 1em;
+}
+.side-menu{
+   margin-top: 1.5em; 
+}
+.side-menu img{
+    height: auto;
+    width: 35%;
+    display: inline-block;
+    vertical-align: 70%;
+}
+.line{
+    width:0.1em;
+    height: 4em;
+    background-color: #64d4e1;
+    display: inline-block;
+    margin: 0 0.2em;
+}
+input[type=text] {
+    font-weight: 300;
+    position: relative;
+    top: 3em;
+    float: right;
+    width: 6em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    padding: 12px 20px 12px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    display: none;
+}
+
+input[type=text]:focus {
+    width: 40%;
+     -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.quit:hover {
+    -webkit-filter:grayscale(100%);
+    }
