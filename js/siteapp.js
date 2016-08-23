@@ -11,4 +11,8 @@ var input = $('input');
         input.hide("slow");
     })
 
+  
+          
+};
+    
 });
