@@ -29,6 +29,7 @@
               <li>
                 <img src="images/icons/home.png" />
                 <p>HOME</p>
+                <span class="halfCircle"></span>
               </li>
                <li>
                 <img src="images/icons/analyse.png" />
@@ -43,7 +44,7 @@
                 <p>EARN</p>
               </li>
            </ul>
-           <input type="text" name="search" placeholder="search...">
+           <input class="searchInput" type="text" name="search" placeholder="search...">
         </div>
        <div class="large-1 columns">
            <div class="side-menu">
@@ -58,13 +59,65 @@
     <div class="row">
         <div class="small-8 columns">
         <h1>Finance life stream</h1>
-            <div class="balance"><h4>Balance</h4><h4><b>7 200,34 </b>PLN</h4></div>
-            <div class="funds"><h4>Available funds</h4><h4><b>7 200,34 </b>PLN</h4></div>
-                <div class="payments"><h4>Scheduled payments</h4><h4><b>2 200,34 </b>PLN</h4></div>
-    
-        <div class="small-4 columns"></div>
+            <div class="balance">
+                <h4>Balance</h4>
+                <h4 class="balanceNo">PLN</h4>
+            </div>
+            <div class="funds">
+                <h4>Available funds</h4>
+                <h4 class="fundsNo">PLN</h4>
+            </div>
+            <div class="payments">
+                <h4>Scheduled payments</h4>
+                <h4 class="paymentsNo">PLN</h4>
+            </div>
+        </div>
+        <div class="small-4 columns">
+            <div class="add">
+            <p class="textFinance">Add</p>
+            <button class="buttonFinance">BANK</button>
+            <button class="buttonFinance">PAYMENT</button><br>
+            <p class="textFinance">Accounts analysis</p>
+            <label class="switch">
+              <input type="checkbox">
+              <div class="slider"></div>
+            </label>
+             </div>
        </div>
+        </div>
+           <div class="row">
+                <div class="small-6 columns">
+                    <p class="componentHeaders">Products</p>
+                    <div class="products">
+                        <img src="images/icons/wallet.png" />
+                        <p>Wallets</p>
+                        <p>PLN</p>
+                    </div>
+                    <div class="products">
+                        <img src="images/icons/deposits.png" />
+                        <p>Deposits</p>
+                    </div>
+                    <div class="products">
+                        <img src="images/icons/accounts.png" />
+                        <p>Accounts</p>
+                    </div>
+                    <div class="products">
+                        <img src="images/icons/funds.png" />
+                        <p>Funds</p>
+                    </div>
+                    <div class="products">
+                        <img src="images/icons/bank_loans.png" />
+                        <p>Bank loans</p>
+                    </div>
+                </div>
+                <div class="small-6 columns">
+                    <p class="componentHeaders">History</p>
+                    <div class="history"></div>
+   
+                </div>
+           </div>
       </main>
+      
     
     
     </body>

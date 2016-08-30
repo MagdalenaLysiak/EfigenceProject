@@ -1,0 +1,41 @@
+.componentHeaders {
+    margin-bottom: 0;
+}
+
+.products{
+    background-color: white;
+    display: inline-block;
+    width: 16em;
+    height: 6em;
+    border-radius: 0.2em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+.products:hover{
+    background-color:$site-colors-header;
+    color: white;
+   .products img:hover {
+    -webkit-filter:grayscale(0%)
+}
+}
+s
+.history{
+    background-color: white;
+    width: 35em;
+    height: 22.5em;
+    border-radius: 0.2em;
+}
+.products img {
+    display: inline-block;
+    line-height: 6em;
+    margin-left: 2em;
+    height: 40%;
+}
+.products p{
+    display:inline-block;
+    line-height: 6em;
+    
+}
+.products:last-child{
+    display: block;
+}

@@ -6,6 +6,7 @@ header{
     background-color: $site-colors-header;
     height: 7em;
     font-family: 'Roboto Condensed';
+    border-bottom: 0;
     
 }
 .logo{
@@ -79,10 +80,20 @@ header{
     font-size: 12px;
    
 }
+span{
+     height:10px;
+     width:20px;
+     border-radius:  0 0 20px 20px;
+     -moz-border-radius:  0 0 20px 20px;
+     background: $site-colors-bgr;
+     position: absolute;
+     right: 66.7em; 
+}
 li {
     padding-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
+    padding-bottom: 1em;
     
 }
 
@@ -139,34 +150,76 @@ input[type=text]:focus {
 .quit:hover {
     -webkit-filter:grayscale(100%);
     }
-main{
-    background-color: $site-colors-bgr;
-    font-family: 'Roboto Condensed';
-}
-h1{
-    font-weight: 200;
-    font-family: 'Roboto Condensed';
-    margin-bottom: 0;
-}
-.balance{
+.textFinance {
     display: inline-block;
-    margin-right: 5em;
-    
+    margin-top: 2em; 
 }
-.funds{
+.buttonFinance{
     display: inline-block;
-    margin-right: 5em;
-    
+    background-color: $site-colors-header;
+    width: 6em;
+    height: 2em;
+    margin: 0 0.5em;
+    border-radius: 0.2em;
+    color: white;
 }
-.payments{
-    display: inline-block;
-    margin-right: 5em;
-   
+.buttonFinance:hover{
+    background-color: #ccc;
 }
-h4{
-    font-family: 'Roboto Condensed';
-    margin-bottom: 0;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 2.9em;
+  border-radius: 0.2em;
 }
-p{
-    font-family: 'Roboto Condensed';
+.switch input {
+    display:none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 6.4em;
+  height: 2.4em;
+  border-radius: 0.2em;
+  margin-top: 2em; 
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2em;
+  width: 3em;
+  border-radius: 0.2em;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: $site-colors-switch;
+  -webkit-transition: .4s;
+  transition: .4s;
+ 
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(3em);
+  -ms-transform: translateX(3em);
+  transform: translateX(3em);
+}
+.add{
+    float:right;
 }
