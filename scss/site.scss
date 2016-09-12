@@ -53,6 +53,8 @@ header{
     transition: 0.6s;
 	transform-style: flat;
 	position: relative;
+    -webkit-filter:invert(100%);
+    filter: invert(100%);
 }
 
 .message{
@@ -89,21 +91,21 @@ span{
      position: absolute;
      right: 66.7em; 
 }
-li {
-    padding-top: 2em;
+.menu li {
+    margin-top: 2em;
+    padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    padding-bottom: 1em;
-    
 }
 
-li:hover {
+.menu li:hover {
     background:#000;
   
 }
 .menu img {
     height: auto;
     width: 60%;
+    margin-top:1em;
     
 }
 .menu p{
@@ -223,3 +225,7 @@ input:checked + .slider:before {
 .add{
     float:right;
 }
+.search:hover {
+    -webkit-filter:invert(100%);
+    filter: invert(100%);
+    }

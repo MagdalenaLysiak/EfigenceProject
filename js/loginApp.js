@@ -26,7 +26,7 @@ $(document).ready(function() {
                 console.log(response);
             }
         });
-        window.location.href = "http://www.google.com";
+        window.location.href = "file:///C:/Users/Madzia/Desktop/EfigenceProject/site.html";
     };
     };
 

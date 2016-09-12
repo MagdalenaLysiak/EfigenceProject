@@ -1,0 +1,132 @@
+.userPreferences img {
+    margin-right: .5em;
+    margin-bottom: 1em;
+    height: auto;
+    width: 14%;
+}
+.gry{
+    margin-right:1em;
+}
+.greyButton {
+    background-color: $grywalizacja-colors-grey-button;
+    width: 7em;
+}
+
+.discover {
+    margin-top: 2em;
+}
+
+.challengeBox {
+    width: 11em;
+    height: 11em;
+    background-color: #fff;
+    border-radius: .5em;
+    display: inline-block;
+    margin-right: .7em;
+    margin-top: .7em;
+    
+    
+    .percent{
+        font-size: 2em;
+        float: left;
+        margin-left: .5em;
+        display: inline;
+    }
+
+        .lock {
+            width: 15%;
+            height: auto;
+            margin-top: .7em;
+            margin-right: 1.1em;
+            float: right;
+        }
+        .checked {
+            margin-top: .2em;
+            margin-left: .5em;
+            float: left;
+            display: none;
+        }
+
+        .star {
+            width: 15%;
+            height: auto;
+            margin-top: .7em;
+            margin-right: 1.1em;
+            float: right;
+        }
+
+        .star_white {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .containerTitle {
+            text-align: center;
+            margin-top: 7em;
+            display: block;
+        }    
+}
+
+.empty {
+    background-image: url(../images/icons/magnifier.png);
+    background-size: cover;
+}
+
+.frst-log {
+    background-image: url(../images/imgs/frst_log.png);
+    background-size: cover;
+    color: #fff;
+    box-shadow: inset 0 -30px 40px #000;
+}
+
+.goals {
+    background: $site-colors-header url(../images/imgs/goals.png) ;
+    background-repeat: no-repeat;
+    background-size: 20% 100%;
+    background-position: left;
+    color: #fff;
+}
+
+.regular_log {
+    background-image: url(../images/imgs/regular_log.png);
+    background-size: cover;
+    color: #fff;
+}
+
+.savings_plan {
+    background: $site-colors-header url(../images/imgs/savings_plan.png) ;
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position: left;
+    color: #fff;
+}
+
+.personal_set {
+    background: $site-colors-header url(../images/imgs/personal_set.png) ;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: left;
+    color: #fff;
+}
+
+.progres_bar {
+    border-radius: 0 .5em .5em 0;
+    background-color: $site-colors-header;
+    width: 9.5em;
+    height: 11em;
+    float: right;
+    display: none;
+}
+
+.empty_ribbon {
+    background-image: url(../images/icons/ribbon.png);
+    background-size: cover;
+}
+.awardRibbon:hover {
+    -webkit-filter:invert(100%);
+    filter: invert(100%);
+    }
+.mail:hover {
+    -webkit-filter:invert(100%);
+    filter: invert(100%);
+    }

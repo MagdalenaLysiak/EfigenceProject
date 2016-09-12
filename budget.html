@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efi dashboard</title>
+    <title>Budget</title>
     <link rel="stylesheet" href="css/app.css">
     <script src="http://code.jquery.com/jquery-1.11.3.js">
     </script>
@@ -29,6 +29,7 @@
               <li>
                 <img src="images/icons/home.png" />
                 <p>HOME</p>
+                <span class="halfCircle"></span>
               </li>
                <li>
                 <img src="images/icons/analyse.png" />
@@ -57,66 +58,35 @@
        <main>
     <div class="row">
         <div class="small-8 columns">
-        <h1>Finance life stream</h1>
+        <h1>Budgets</h1>
             <div class="balance">
-                <h4>Balance</h4>
-                <h4 class="balanceNo">PLN</h4>
+                <h4>Summary</h4>
+                <h4 class="summary">1230 z <b>1750,00</b></h4>
             </div>
             <div class="funds">
-                <h4>Available funds</h4>
-                <h4 class="fundsNo">PLN</h4>
+                <h4>Other expences</h4>
+                <h4 class="other_expences"><b>1 200,00</b></h4>
             </div>
             <div class="payments">
-                <h4>Scheduled payments</h4>
-                <h4 class="paymentsNo">PLN</h4>
+                <h4>Month</h4>
+                <h4 class="month"><b>< </b>February 2014<b> ></b></h4>
             </div>
         </div>
         <div class="small-4 columns">
-            <div class="add">
-            <p class="textFinance">Add</p>
-            <button class="buttonFinance">BANK</button>
-            <button class="buttonFinance">PAYMENT</button><br>
-            <p class="textFinance">Accounts analysis</p>
-            <label class="switch">
-              <input type="checkbox">
-              <div class="slider"></div>
-            </label>
+            <p>All budgets are rounded in PLN</p>
              </div>
        </div>
+        <div class="row">
+        <ul class="budgetList">
+            <li>Home<b>100</b>of 200</li>
+            <li>Studies<b>850</b>of 1000</li>
+            <li>Food 50 of</li>
+            <li>Car<b>100</b>of 200</li>
+            <li>Cinema<b>20</b>of 50</li>
+            </ul>
+        
         </div>
-           <div class="row">
-                <div class="small-6 columns">
-                    <p class="componentHeaders">Products</p>
-                    <div class="products">
-                        <img src="images/icons/wallet.png" />
-                        <p>Wallets</p>
-                        <p>PLN</p>
-                    </div>
-                    <div class="products">
-                        <img src="images/icons/deposits.png" />
-                        <p>Deposits</p>
-                    </div>
-                    <div class="products">
-                        <img src="images/icons/accounts.png" />
-                        <p>Accounts</p>
-                    </div>
-                    <div class="products">
-                        <img src="images/icons/funds.png" />
-                        <p>Funds</p>
-                    </div>
-                    <div class="products">
-                        <img src="images/icons/bank_loans.png" />
-                        <p>Bank loans</p>
-                    </div>
-                </div>
-                <div class="small-6 columns">
-                    <p class="componentHeaders">History</p>
-                    <div class="history"></div>
-   
-                </div>
-           </div>
+        </div>
       </main>
-      
-    
-    
     </body>
+</html>
