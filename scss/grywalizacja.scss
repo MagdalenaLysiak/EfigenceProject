@@ -4,18 +4,16 @@
     height: auto;
     width: 14%;
 }
-.gry{
-    margin-right:1em;
+.gry {
+    margin-right: 1em;
 }
 .greyButton {
     background-color: $grywalizacja-colors-grey-button;
     width: 7em;
 }
-
 .discover {
     margin-top: 2em;
 }
-
 .challengeBox {
     width: 11em;
     height: 11em;
@@ -24,109 +22,311 @@
     display: inline-block;
     margin-right: .7em;
     margin-top: .7em;
-    
-    
-    .percent{
+    .percent {
         font-size: 2em;
         float: left;
         margin-left: .5em;
         display: inline;
     }
-
-        .lock {
-            width: 15%;
-            height: auto;
-            margin-top: .7em;
-            margin-right: 1.1em;
-            float: right;
-        }
-        .checked {
-            margin-top: .2em;
-            margin-left: .5em;
-            float: left;
-            display: none;
-        }
-
-        .star {
-            width: 15%;
-            height: auto;
-            margin-top: .7em;
-            margin-right: 1.1em;
-            float: right;
-        }
-
-        .star_white {
-            margin-right: 0;
-            margin-left: 0;
-        }
-
-        .containerTitle {
-            text-align: center;
-            margin-top: 7em;
-            display: block;
-        }    
+    .lock {
+        width: 15%;
+        height: auto;
+        margin-top: .7em;
+        margin-right: 1.1em;
+        float: right;
+    }
+    .checked {
+        margin-top: .2em;
+        margin-left: .5em;
+        float: left;
+        display: none;
+    }
+    .star {
+        width: 15%;
+        height: auto;
+        margin-top: .7em;
+        margin-right: 1.1em;
+        float: right;
+    }
+    .star_white {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .containerTitle {
+        text-align: center;
+        margin-top: 7em;
+        display: block;
+    }
+    .newContent {
+        position: absolute;
+        left: 1.5em;
+        top: 2.7em;
+        display: block;
+        font-size: 1.5em;
+    }
+    .redLockType {
+        left: 2em;
+        top: 2.7em;
+    }
+    .hide {
+        visibility: hidden;
+    }
+    a {
+        color: black;
+    }
 }
-
 .empty {
     background-image: url(../images/icons/magnifier.png);
     background-size: cover;
+    a {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+    }
+    a:hover {
+        color: white;
+    }
+    a:after {
+        content: "";
+        height: 11em;
+        right: 0;
+        top: 0;
+        width: 0px;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        z-index: -1;
+        border-radius: .5em;
+    }
+    a:hover:after {
+        width: 100%;
+        background-color: $site-colors-header;
+        color: white;
+    }
 }
-
+.emptyLocked {
+    background-image: url(../images/icons/magnifier.png);
+    background-size: cover;
+    a {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+    }
+    a:hover {
+        color: white;
+    }
+    a:after {
+        content: "";
+        height: 11em;
+        right: 0;
+        top: 0;
+        width: 0px;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        z-index: -1;
+        border-radius: .5em;
+    }
+    a:hover:after {
+        width: 100%;
+        background-color: red;
+        color: white;
+    }
+}
 .frst-log {
     background-image: url(../images/imgs/frst_log.png);
     background-size: cover;
     color: #fff;
     box-shadow: inset 0 -30px 40px #000;
+    a {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+        color: white;
+    }
+    a:after {
+        content: "";
+        height: 11em;
+        right: 0;
+        top: 0;
+        width: 0px;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        z-index: -1;
+        border-radius: .5em;
+    }
+    a:hover:after {
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        color: white;
+    }
 }
-
 .goals {
-    background: $site-colors-header url(../images/imgs/goals.png) ;
+    background: url(../images/imgs/goals.png);
     background-repeat: no-repeat;
-    background-size: 20% 100%;
-    background-position: left;
+    background-size: cover;
     color: #fff;
+    a {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+        color: white;
+    }
+    a:after {
+        content: "";
+        height: 11em;
+        right: 0;
+        top: 0;
+        width: 0px;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        z-index: -1;
+        border-radius: 0 .5em .5em 0;
+    }
+    a:hover:after {
+        width: 80%;
+        background-color: $site-colors-header;
+    }
 }
-
 .regular_log {
     background-image: url(../images/imgs/regular_log.png);
     background-size: cover;
     color: #fff;
+    a {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+        color: white;
+    }
+    a:after {
+        content: "";
+        height: 11em;
+        right: 0;
+        top: 0;
+        width: 0px;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        z-index: -1;
+        border-radius: .5em;
+    }
+    a:hover:after {
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        color: white;
+    }
 }
-
 .savings_plan {
-    background: $site-colors-header url(../images/imgs/savings_plan.png) ;
+    background: url(../images/imgs/savings_plan.png);
     background-repeat: no-repeat;
-    background-size: 70% 100%;
+    background-size: cover;
     background-position: left;
     color: #fff;
+    a {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+        color: white;
+    }
+    a:after {
+        content: "";
+        height: 11em;
+        right: 0;
+        top: 0;
+        width: 0px;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        z-index: -1;
+        border-radius: 0 .5em .5em 0;
+    }
+    a:hover:after {
+        width: 30%;
+        background-color: $site-colors-header;
+    }
 }
-
 .personal_set {
-    background: $site-colors-header url(../images/imgs/personal_set.png) ;
+    background: url(../images/imgs/personal_set.png);
     background-repeat: no-repeat;
-    background-size: 50% 100%;
-    background-position: left;
+    background-size: cover;
     color: #fff;
+    a {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+        color: white;
+    }
+    a:after {
+        content: "";
+        height: 11em;
+        right: 0;
+        top: 0;
+        width: 0px;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        z-index: -1;
+        border-radius: 0 .5em .5em 0;
+    }
+    a:hover:after {
+        width: 50%;
+        background-color: $site-colors-header;
+    }
 }
-
-.progres_bar {
-    border-radius: 0 .5em .5em 0;
-    background-color: $site-colors-header;
-    width: 9.5em;
-    height: 11em;
-    float: right;
-    display: none;
-}
-
 .empty_ribbon {
     background-image: url(../images/icons/ribbon.png);
     background-size: cover;
+    a {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+    }
+    a:hover {
+        color: white;
+    }
+    a:after {
+        content: "";
+        height: 11em;
+        right: 0;
+        top: 0;
+        width: 0px;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        z-index: -1;
+        border-radius: .5em;
+    }
+    a:hover:after {
+        width: 100%;
+        background-color: $site-colors-header;
+        color: white;
+    }
 }
 .awardRibbon:hover {
-    -webkit-filter:invert(100%);
+    -webkit-filter: invert(100%);
     filter: invert(100%);
-    }
+}
 .mail:hover {
-    -webkit-filter:invert(100%);
+    -webkit-filter: invert(100%);
     filter: invert(100%);
-    }
+}
