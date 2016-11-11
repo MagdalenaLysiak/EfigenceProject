@@ -39,14 +39,27 @@ header{
     font-weight: 300;
     font-size: 21px;
     color: white;
-    border-left: 2em;
-}
-
-.userPreferences img{
-    margin-right: 0.5em;
-    margin-bottom: 1em;
-    height: auto;
-    width: 18%;
+        ul {
+            margin:0 auto;
+            border:0;
+            padding:0;
+            list-style: none;
+            li {
+                margin:0 ;
+                border:0 ;
+                padding:0 ;
+                display: inline;
+            }
+            img {
+                margin:0 0.7em 0 0;
+                border:0;
+                padding:0;
+                height: auto;
+                width: 16%;
+                float:left;
+                vertical-align: 20%;
+            }
+         }
 }
 .wheel:hover{
     transform: rotate(180deg);
@@ -57,69 +70,108 @@ header{
     filter: invert(100%);
 }
 
-.message{
-    background-color: #e81c7b;
-    border-radius: 100%;
-    width: 0.8em;
-    height: 0.8em;
-    position: absolute;
-    left: 19.2em;
-    top: 3.3em;
-}
-.message p{
-    font-weight: 300;
-    color: white;
-    text-align: center;
-    font-size: 0.5em;
-    line-height: 1.8em;
-}
 .menu{
-    
     display:inline-block;
     color: white;
     text-align: center;
     font-weight: 300;
     font-size: 12px;
-   
-}
-span{
-     height:10px;
-     width:20px;
-     border-radius:  0 0 20px 20px;
-     -moz-border-radius:  0 0 20px 20px;
-     background: $site-colors-bgr;
-     position: absolute;
-     right: 66.7em; 
-}
-.menu li {
-    margin-top: 2em;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-.menu li:hover {
+        li {
+            margin-top: 2em;
+            padding-top: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
+    }
+    li:hover {
     background:#000;
   
 }
-.menu img {
+    img {
     height: auto;
     width: 60%;
     margin-top:1em;
-    
+        
 }
-.menu p{
-    margin-top: 1em;
+    p {
+         margin-top: 1em;
+          }     
+   
 }
+.message a {
+	display:block;
+	position:relative;
+	font-weight:bold;
+	text-decoration:none;
+	color:white;
+    font-size: .5em;
+}
+
+.message a[data-bubble]:after {
+	content:attr(data-bubble);
+	position:absolute;
+    top:0;
+	left:1em;
+	line-height:1.5em;
+	padding:0 .5em;
+	text-align:center;
+	background-color:$site-colors-alert;
+	color:white;
+	border-radius:5em;
+	z-index:-1;
+   -webkit-transform: translateZ(0);/*Prevents text flicker*/
+	will-change: transform;
+}
+.message a:hover[data-bubble]:after, .menu a:active[data-bubble]:after, .message a:focus[data-bubble]:after {
+	-webkit-animation:ease bubbleover .4s;
+	animation:ease bubbleover .4s;
+  -webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	top:-1.25em; /* If pseudo animation not supported [see http://css-tricks.com/transitions-and-animations-on-css-generated-content/], simple hover fallback happens*/
+	z-index:1;
+}
+
+@-webkit-keyframes bubbleover {
+  0%   {
+  	-webkit-transform:translate(0, 1em);
+  	z-index:-1
+  	}
+  50% {
+  	-webkit-transform:translate(0, -.5em);
+  	z-index:-1
+  } 
+  100% {
+  	-webkit-transform:translate(0, 0);
+  	z-index:1;
+  	}
+}
+
+@keyframes bubbleover {
+  0%   {
+    top:0;
+    transform:translate(0, 0);
+    z-index:-1;
+    }
+  50% {
+    transform:translate(0, -12px);
+    z-index:-1
+    } 
+  100% {
+    transform:translate(0, 6px);
+    z-index:1;
+    }
+}
+
+
 .side-menu{
    margin-top: 1.5em; 
-}
-.side-menu img{
+    img{
     height: auto;
     width: 35%;
     display: inline-block;
     vertical-align: 70%;
 }
+}
+
 .line{
     width:0.1em;
     height: 4em;
@@ -175,10 +227,11 @@ input[type=text]:focus {
   height: 34px;
   margin-left: 2.9em;
   border-radius: 0.2em;
-}
-.switch input {
+    input {
     display:none;
 }
+}
+
 .slider {
   position: absolute;
   cursor: pointer;
